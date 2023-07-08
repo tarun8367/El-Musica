@@ -30,7 +30,7 @@ const FeaturedPlaylists = ({ setView, setGlobalPlaylistId }) => {
 
     return (
         <div className='flex flex-col gap-4 px-8 h-screen overflow-y-scroll'>
-            <h2 className='text-xl font-bold'>Featured Playlists</h2>
+            <h2 className='text-2xl ml-5 text-white font-bold'>Featured Playlists</h2>
             <div className='flex flex-wrap gap-6 mb-48'>
                 {playlists.map((playlist) => {
                     return <div onClick={() => selectPlaylist(playlist)} key={playlist.id} className='cursor-pointer relative group w-56 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4'>
